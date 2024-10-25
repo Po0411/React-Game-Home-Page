@@ -1,15 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from './Header.js'
+import React, { useState } from 'react'
+import Navbar from './Components/Navbar/Navbar'
 
-function App() {
+const App = () => {
+
+  const [theme, setTheme] = useState("light");
+
+
   return (
-    <div>
-      <Header />
+    <div className='container'>
+      <Navbar theme={theme} setTheme={setTheme} />
     </div>
-  );
+  )
 }
 
-
-
-export default App;
+export default App
