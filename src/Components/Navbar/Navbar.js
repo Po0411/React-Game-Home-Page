@@ -1,34 +1,19 @@
 import React from 'react'
 import './Navbar.css'
-import logo_light from '../../assets/logo-black.png'
-import logo_dark from '../../assets/logo-white.png'
-import search_icon_light from '../../assets/search-w.png'
-import search_icon_dark from '../../assets/search-b.png'
-import toogle_light from '../../assets/night.png'
-import toogle_dark from '../../assets/day.png'
+import logo_game from '../../assets/logo.png'
 
-const Navbar = ({theme, setTheme}) => {
-
-        const toggle_mode = ()=>{
-            theme == 'light' ? setTheme('dark') : setTheme('light')
-        }
-
+const Navbar = () => {
   return (
     <div className='navbar'>
-      <img src={theme == 'light' ? logo_light : logo_dark} alt='' className='logo'/>
+      <img src={logo_game} alt='' className='logo'/>
       <ul>
-        <li>학과안내</li>
+        <li>
+          <a href="https://example.com" target="_blank" rel="noopener noreferrer">학과안내</a>
+        </li>
         <li>캐릭터</li>
         <li>3D모델링</li>
         <li>게임작품</li>
       </ul>
-
-      <div className='search-box'>
-        <input type='text' placeholder='Search'/>
-        <img src={theme == 'light' ? search_icon_light : search_icon_dark} alt='' />
-      </div>
-
-      <img onClick={()=>{toggle_mode()}} src={theme} alt='' className='toggle-icon '/>
 
     </div>
   )
