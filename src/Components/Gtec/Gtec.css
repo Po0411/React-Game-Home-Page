@@ -1,0 +1,20 @@
+.promotion-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 17%;
+}
+
+.promotion-text {
+    font-size: 15px;
+    font-weight: bold;
+    color: #919191;
+}
+
+.lns {
+    width: 150px;
+    display: block;       /* 블록 요소로 설정하여 마진을 사용할 수 있게 함 */
+    margin: 20px auto;   /* 위아래 마진을 20px로 설정하고, 좌우 중앙 정렬 */
+    max-width: 100%;      /* 반응형으로 너비 조정 */
+    height: auto;         /* 비율에 맞게 높이 자동 조정 */
+}
