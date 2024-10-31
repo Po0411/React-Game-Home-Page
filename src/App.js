@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import Gtec from './Components/Gtec/Gtec';
 import Gstar from './Components/Gstar/Gstar';
-import class_3 from './Components/class/class3/class_3';
+import Work from './Components/Work/Work';
 import bannerImage from './assets/VANNER.png';
 import './App.css';
 
@@ -14,8 +14,8 @@ const App = () => {
       <div className="section-spacing">
         <Gtec />
       </div>
+      <Work />
       <Gstar />
-      <class_3 />
     </div>
   );
 };

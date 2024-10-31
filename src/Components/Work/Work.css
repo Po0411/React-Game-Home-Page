@@ -1,0 +1,49 @@
+.promotion-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 17%;
+}
+
+.promotion-text {
+    font-size: 15px;
+    font-weight: bold;
+    color: #919191;
+}
+
+.work-container {
+    text-align: center;
+}
+
+.promotion-container {
+    margin-bottom: 20px;
+}
+
+.promotion-link {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.promotion-text {
+    font-size: 16px;
+    color: #666;
+}
+
+.image-scroll-container {
+    width: 70%; /* 원하는 너비로 설정 (너비를 줄임) */
+    height: 120%; /* 원하는 높이로 설정 */
+    overflow-x: scroll; /* 가로 스크롤 활성화 */
+    border: 1px solid #ddd; /* 컨테이너 스타일 */
+    padding: 0px; /* 패딩 조정 */
+    display: flex; /* 가로 정렬을 위해 flexbox 사용 */
+    justify-content: center; /* 이미지 가운데 정렬 */
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
+.work-image {
+    width: 200px; /* 이미지 크기 조정 */
+    height: auto; /* 비율 유지 */
+    margin-right: 30px; /* 이미지 간격 조정 */
+}
+
+
